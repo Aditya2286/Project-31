@@ -1,10 +1,10 @@
 class Plinko {
-    constructor(x,y,radius) {
+    constructor(x,y) {
         var options = {
             isStatic:true
         }
 
-        this.radius = radius;
+        this.radius = 10;
         this.body = Bodies.circle(x,y,this.radius,options);
         World.add(world,this.body);
     }
@@ -16,10 +16,10 @@ class Plinko {
         push();
         translate(pos.x,pos.y);
         rotate(angle);
-        nostroke();
+        //nostroke();
         fill("white");
         ellipseMode(RADIUS);
-        ellipse(0,0,this.radius);
+        ellipse(0,0,this.radius,this.radius);
         pop();
     }
 }
