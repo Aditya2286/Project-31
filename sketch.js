@@ -30,9 +30,9 @@ function setup() {
   border4= createSprite(width/2,798,525,5);
   border4.shapeColor="brown";
 
-  ground= new Ground(width/2,791,468,8);
+  ground= new Ground(width/2,791,512,8);
 
-  for(var i = 0; i <=width; i = i + 80){
+  for(var i = 0; i <=width; i = i + 90){
     divisions.push(new Divisions(i, height - divisionHeight/2, 10, divisionHeight));
   }
 
